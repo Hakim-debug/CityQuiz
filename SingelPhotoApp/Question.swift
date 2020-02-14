@@ -15,19 +15,21 @@ class Question {
     var Answer1 : String
     var Answer2 : String
     var Answer3 : String
+    
     var imageID : String
     var selected : Bool
     
+    var rightOrWrong = false
+    
+    
     init(tips: String, answer: String, Answer1: String, Answer2: String, Answer3: String, imageId : String){
-    self.tips = tips
-    self.answer = answer
-    self.Answer1 = Answer1
-    self.Answer2 = Answer2
-    self.Answer3 = Answer3
-    self.imageID = imageId
-    self.selected = false
+        self.tips = tips
+        self.answer = answer
+        self.Answer1 = Answer1
+        self.Answer2 = Answer2
+        self.Answer3 = Answer3
+        self.imageID = imageId
+        self.selected = false
     }
-
-
     
 }

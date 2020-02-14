@@ -49,6 +49,11 @@ class QuestionViewController: UIViewController {
     var selectedAnswer : String = "";
     var resultText : String = ""
     var audio = true
+    var rightOrwrong = [false]
+    
+   var answeredQuestions = [Question]()
+    
+    var lastQuestionAnswer = false
     
     // Do any additional setup after loading the view.
     
@@ -65,6 +70,8 @@ class QuestionViewController: UIViewController {
             tipsLabel.alpha = 0
         }
     }
+    
+    
     
     
     
@@ -89,7 +96,7 @@ class QuestionViewController: UIViewController {
         
         nrOfQuestions = questions.count
         nrOfCorrectAnsweres = 0
-        }
+    }
     
     
     // This Next Function takes you to the next question and changes the images and changes the indexes
@@ -99,7 +106,7 @@ class QuestionViewController: UIViewController {
         self.tipsButton.setTitle("Show Tips", for: .normal)
         self.tipsLabel.alpha = 0
         
-
+        
         
         
         //Control if previos answer is correct
@@ -121,13 +128,10 @@ class QuestionViewController: UIViewController {
             currentQuestionIndex += 1
             print("currentQuestionIndex is:   \(questions.count - 1)")
             self.view.backgroundColor = UIColor.white
-        }
-            
-            
-            
-        else {
+        } else {
             print("Nr of correct answers: \(nrOfCorrectAnsweres)")
             resultText = "Nr of correct answers: \(nrOfCorrectAnsweres) out of \(questions.count)"
+            print("Question count: \(questions.count)")
             performSegue(withIdentifier: resultSegue, sender: self)
             self.view.backgroundColor = UIColor.white
             
@@ -146,13 +150,15 @@ class QuestionViewController: UIViewController {
         Buttom3.setTitle(question.Answer3, for: .normal)
         europeImage.image = UIImage(named: question.imageID)
         if let ques = question.tips {
-        tipsLabel.text = ques
-         }
+            tipsLabel.text = ques
+        }
         
         
         print("after if check")
         //      This funtion is adding the Score to Your Quizz
         ScoreLabel.text = "Your Score " +  String(nrOfCorrectAnsweres ) + " Of " + String(questions.count)
+        
+        
         
     }
     
@@ -164,7 +170,7 @@ class QuestionViewController: UIViewController {
     //    This Function display an aleart Button telling you if are Correct
     func showAlertAction(title: String, message: String){
         let alert = UIAlertController(title: "Awsome!", message: "Correct Answer:)", preferredStyle: UIAlertController.Style.alert)
-
+        
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nextQuestion(alert:)))
         self.present(alert, animated: true, completion: nil)
@@ -179,6 +185,9 @@ class QuestionViewController: UIViewController {
     
     
     func nextQuestion(alert: UIAlertAction) {
+        let question = questions[currentQuestionIndex]
+        question.rightOrWrong = lastQuestionAnswer
+        answeredQuestions.append(question)
         loadQuestion()
     }
     
@@ -189,9 +198,10 @@ class QuestionViewController: UIViewController {
     func showAlertAction2(title: String, message: String){
         let alert = UIAlertController(title: "Sorry!", message: "Wrong Answer:(", preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "Try Again  ", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
             print("Action")
-           self.view.backgroundColor = UIColor.white
+            self.view.backgroundColor = UIColor.white
+            
             
             self.Buttom1.alpha = 1
             self.Buttom2.alpha = 1
@@ -212,20 +222,22 @@ class QuestionViewController: UIViewController {
     
     
     
-//    The PausButton 
+    
+    
+    //    The PausButton
     @IBAction func PausButton(_ sender: UIButton) {
-       // audio = true
+        
         
         if audio == false{
             audioPlayer?.play()
             audio = true
         }
-        
+            
         else if audio == true {
             self.audioPlayer?.pause()
             audio = false
         }
-         
+        
     }
     
     
@@ -236,33 +248,39 @@ class QuestionViewController: UIViewController {
     //  This funtion Takes you to the next Question and checks
     
     @IBAction func NextQuestion(_ sender: Any) {
+        
+        
         loadQuestion()
-    
+        //        audioPlayer?.stop()
+        
         
     }
     
-
+    
     //Control if previos answer is correct
     func CheckAnswer(){
         let tempQues : Question = questions[currentQuestionIndex]
         if tempQues.answer == selectedAnswer{
             
-        // When you are Correct you will get a green Screen
-        print("inne i check")
-        self.view.backgroundColor = UIColor.green
+            // When you are Correct you will get a green Screen
+            print("inne i check")
+            self.view.backgroundColor = UIColor.green
             
+            lastQuestionAnswer = true
             showAlertAction(title: "Awsome!", message: "Correct Answer:)")
-
             
-    }
-       
             
-    // When you are Correct you will get a green Screen
-        else {self.view.backgroundColor = UIColor.red}
-
-        showAlertAction2(title: "Sorry!", message:"Wrong answer:(")
+        } // When you are not Correct you will get a Red Screen
+        else {
+            lastQuestionAnswer = false
+            self.view.backgroundColor = UIColor.red
+            showAlertAction2(title: "Sorry!", message:"Wrong answer:(")
+            
+        }
         
-//       when Alert buttons shows the alanativ buttons faddes awaye
+        
+        
+        //       when Alert buttons shows the alanativ buttons faddes awaye
         Buttom1.alpha = 0
         Buttom2.alpha = 0
         Buttom3.alpha = 0
@@ -327,13 +345,21 @@ class QuestionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == resultSegue {
             
-            let destinationVC = segue.destination as! ResultViewController
+            let destinationVC = segue.destination as!    ResultViewController
             destinationVC.resultText = resultText
+            destinationVC.questions = questions
+            destinationVC.answeredQuestions = answeredQuestions
+            self.lastQuestionAnswer = true
+          
             
+            
+            audioPlayer?.stop()
             
         }
         
     }
+    
+    
     
 }
 
