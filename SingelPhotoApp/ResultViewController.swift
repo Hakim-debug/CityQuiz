@@ -15,14 +15,12 @@ class ResultViewController: UIViewController ,UITableViewDataSource,UITableViewD
    
     var questions : [Question] = []
     
-    let cellId = "cellId"
-    
+    let cellId = "cellId2"
     
     
     var answeredQuestions = [Question]()
     
-//    let names = ["Hakim", "Jacob", "per"]
-    
+
     let nrOfCorrectAnsweres = [Question]()
     
     @IBOutlet weak var resultTableView: UITableView!
@@ -31,43 +29,63 @@ class ResultViewController: UIViewController ,UITableViewDataSource,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+        print("answeredQuesCount \(answeredQuestions.count)")
+
         labelResult.text = resultText
-        self.view.backgroundColor = UIColor.green
+        resultTabel()
+
        
         
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        questions.count
+        answeredQuestions.count
+        
+        
      
-        
-        
-        
-        
-        
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath )
             as! ResultTableViewCell
-        let question = questions[indexPath.row]
-        cell.textLabel?.text = question.answer
-//        cell.textLabel?.text = self.resultText?[indexPath.row]
+        
+        //let question = questions[indexPath.row]
+        let result = answeredQuestions[indexPath.row]
+        let isCorrect : Bool = result.rightOrWrong
         
         
-     
-//
-//        var ques : Question
-//        ques = questions[indexPath.row]
-//
-//        cell.labelCorrect.text = "test"
+        cell.cellImage.image = UIImage(named:  result.imageID)
+    
+
+        
+        if !isCorrect{
+            cell.backgroundColor = UIColor.red
+            cell.cellLabel?.text = "Wrong answer"
+        }
+        
+        else {
+            cell.backgroundColor = UIColor.green
+            cell.cellLabel?.text = "Correct answer"
+            }
+            
+
         
         
         return cell
+        
+    }
+    
+    func resultTabel(){
+        resultTableView.layer.cornerRadius = 8
+        resultTableView.layer.borderWidth = 2
+        labelResult.layer.cornerRadius = 5
+        labelResult.layer.borderWidth = 2
+    
+        
+        
+        
     }
 }
 

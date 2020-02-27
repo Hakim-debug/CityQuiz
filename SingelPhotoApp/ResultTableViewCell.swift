@@ -10,10 +10,12 @@ import UIKit
 
 class ResultTableViewCell: UITableViewCell {
     
-     
-    @IBOutlet weak var labelCorrect: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
     
-   // var delegate : ResultViewController
+    
+    @IBOutlet weak var cellLabel: UILabel!
+    
+   
     
     override func awakeFromNib() {
         
