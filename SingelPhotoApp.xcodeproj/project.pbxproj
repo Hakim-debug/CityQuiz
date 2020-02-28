@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD0044A523D9D3F900A0FE20 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0044A423D9D3F900A0FE20 /* ResultViewController.swift */; };
+		FD03C7B423F32EE80045F2E8 /* 03- Gopala.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD03C7B323F32EE80045F2E8 /* 03- Gopala.mp3 */; };
+		FD05189923CB767800917861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05189823CB767800917861 /* AppDelegate.swift */; };
+		FD05189B23CB767800917861 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05189A23CB767800917861 /* SceneDelegate.swift */; };
+		FD05189D23CB767800917861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05189C23CB767800917861 /* ViewController.swift */; };
+		FD0518A023CB767800917861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD05189E23CB767800917861 /* Main.storyboard */; };
+		FD0518A223CB767A00917861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0518A123CB767A00917861 /* Assets.xcassets */; };
+		FD0518A523CB767A00917861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0518A323CB767A00917861 /* LaunchScreen.storyboard */; };
+		FD0518B023CB767A00917861 /* SingelPhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0518AF23CB767A00917861 /* SingelPhotoAppTests.swift */; };
+		FD0518BB23CB767A00917861 /* SingelPhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0518BA23CB767A00917861 /* SingelPhotoAppUITests.swift */; };
+		FD0725E823EACA1C00CFC59A /* savannah-preview-full.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD0725E723EACA1C00CFC59A /* savannah-preview-full.mp3 */; };
+		FD0725F423EAE1EF00CFC59A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0725EA23EACAE100CFC59A /* AVFoundation.framework */; };
+		FD0725F823EAE2AF00CFC59A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0725F723EAE2AF00CFC59A /* Default-568h@2x.png */; };
+		FD0725FC23EAF48600CFC59A /* sunsets-preview-60s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD0725FB23EAF48600CFC59A /* sunsets-preview-60s.mp3 */; };
+		FD0725FE23EB6F3200CFC59A /* Toto - Africa (Diezeo Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD0725FD23EB6F3200CFC59A /* Toto - Africa (Diezeo Remix).mp3 */; };
+		FD08BD7E23D1F1560088BFA8 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08BD7D23D1F1560088BFA8 /* QuestionViewController.swift */; };
+		FD099DD023F425F4006C138B /* CellPictureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD099DCF23F425F4006C138B /* CellPictureFile.swift */; };
+		FD099DD223F43486006C138B /* Le Gang - Anita Latina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD099DD123F43486006C138B /* Le Gang - Anita Latina.mp3 */; };
+		FD0A0A8D2408672D00AC00E1 /* Alan Walker - Fade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD0A0A8C2408672D00AC00E1 /* Alan Walker - Fade.mp3 */; };
+		FD283FBF23F5673F004A0084 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD283FBE23F5673F004A0084 /* ResultTableViewCell.swift */; };
+		FD8E3EC023F5834C007DD457 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD8E3EBF23F5834C007DD457 /* ResultTableViewCell.xib */; };
+		FDFF2FCB23D09D0600FA0AB7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFF2FCA23D09D0600FA0AB7 /* Question.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD0518AC23CB767A00917861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD05188D23CB767800917861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD05189423CB767800917861;
+			remoteInfo = SingelPhotoApp;
+		};
+		FD0518B723CB767A00917861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD05188D23CB767800917861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD05189423CB767800917861;
+			remoteInfo = SingelPhotoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD0044A423D9D3F900A0FE20 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FD03C7B323F32EE80045F2E8 /* 03- Gopala.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03- Gopala.mp3"; sourceTree = "<group>"; };
+		FD05189523CB767800917861 /* SingelPhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingelPhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD05189823CB767800917861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD05189A23CB767800917861 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD05189C23CB767800917861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD05189F23CB767800917861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD0518A123CB767A00917861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD0518A423CB767A00917861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD0518AB23CB767A00917861 /* SingelPhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingelPhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0518AF23CB767A00917861 /* SingelPhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingelPhotoAppTests.swift; sourceTree = "<group>"; };
+		FD0518B123CB767A00917861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0518B623CB767A00917861 /* SingelPhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingelPhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0518BA23CB767A00917861 /* SingelPhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingelPhotoAppUITests.swift; sourceTree = "<group>"; };
+		FD0518BC23CB767A00917861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0725E723EACA1C00CFC59A /* savannah-preview-full.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "savannah-preview-full.mp3"; sourceTree = "<group>"; };
+		FD0725EA23EACAE100CFC59A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FD0725F723EAE2AF00CFC59A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FD0725F923EAEC0900CFC59A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../.Trash/Info.plist; sourceTree = "<group>"; };
+		FD0725FB23EAF48600CFC59A /* sunsets-preview-60s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sunsets-preview-60s.mp3"; sourceTree = "<group>"; };
+		FD0725FD23EB6F3200CFC59A /* Toto - Africa (Diezeo Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toto - Africa (Diezeo Remix).mp3"; sourceTree = "<group>"; };
+		FD08BD7D23D1F1560088BFA8 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		FD099DCF23F425F4006C138B /* CellPictureFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPictureFile.swift; sourceTree = "<group>"; };
+		FD099DD123F43486006C138B /* Le Gang - Anita Latina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Le Gang - Anita Latina.mp3"; sourceTree = "<group>"; };
+		FD0A0A8C2408672D00AC00E1 /* Alan Walker - Fade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alan Walker - Fade.mp3"; sourceTree = "<group>"; };
+		FD283FBE23F5673F004A0084 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		FD8E3EBF23F5834C007DD457 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		FDFF2FCA23D09D0600FA0AB7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD05189223CB767800917861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0725F423EAE1EF00CFC59A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518A823CB767A00917861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518B323CB767A00917861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD05188C23CB767800917861 = {
+			isa = PBXGroup;
+			children = (
+				FD0725F723EAE2AF00CFC59A /* Default-568h@2x.png */,
+				FD05189723CB767800917861 /* SingelPhotoApp */,
+				FD0518AE23CB767A00917861 /* SingelPhotoAppTests */,
+				FD0518B923CB767A00917861 /* SingelPhotoAppUITests */,
+				FD05189623CB767800917861 /* Products */,
+				FD0725E923EACAE100CFC59A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD05189623CB767800917861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD05189523CB767800917861 /* SingelPhotoApp.app */,
+				FD0518AB23CB767A00917861 /* SingelPhotoAppTests.xctest */,
+				FD0518B623CB767A00917861 /* SingelPhotoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD05189723CB767800917861 /* SingelPhotoApp */ = {
+			isa = PBXGroup;
+			children = (
+				FD05189823CB767800917861 /* AppDelegate.swift */,
+				FD05189A23CB767800917861 /* SceneDelegate.swift */,
+				FD05189C23CB767800917861 /* ViewController.swift */,
+				FD05189E23CB767800917861 /* Main.storyboard */,
+				FD08BD7D23D1F1560088BFA8 /* QuestionViewController.swift */,
+				FDFF2FCA23D09D0600FA0AB7 /* Question.swift */,
+				FD0518A123CB767A00917861 /* Assets.xcassets */,
+				FD0725E723EACA1C00CFC59A /* savannah-preview-full.mp3 */,
+				FD0518A323CB767A00917861 /* LaunchScreen.storyboard */,
+				FD099DCF23F425F4006C138B /* CellPictureFile.swift */,
+				FD0725FB23EAF48600CFC59A /* sunsets-preview-60s.mp3 */,
+				FD099DD123F43486006C138B /* Le Gang - Anita Latina.mp3 */,
+				FD0725FD23EB6F3200CFC59A /* Toto - Africa (Diezeo Remix).mp3 */,
+				FD0A0A8C2408672D00AC00E1 /* Alan Walker - Fade.mp3 */,
+				FD03C7B323F32EE80045F2E8 /* 03- Gopala.mp3 */,
+				FD0044A423D9D3F900A0FE20 /* ResultViewController.swift */,
+				FD0725F923EAEC0900CFC59A /* Info.plist */,
+				FD283FBE23F5673F004A0084 /* ResultTableViewCell.swift */,
+				FD8E3EBF23F5834C007DD457 /* ResultTableViewCell.xib */,
+			);
+			path = SingelPhotoApp;
+			sourceTree = "<group>";
+		};
+		FD0518AE23CB767A00917861 /* SingelPhotoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD0518AF23CB767A00917861 /* SingelPhotoAppTests.swift */,
+				FD0518B123CB767A00917861 /* Info.plist */,
+			);
+			path = SingelPhotoAppTests;
+			sourceTree = "<group>";
+		};
+		FD0518B923CB767A00917861 /* SingelPhotoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD0518BA23CB767A00917861 /* SingelPhotoAppUITests.swift */,
+				FD0518BC23CB767A00917861 /* Info.plist */,
+			);
+			path = SingelPhotoAppUITests;
+			sourceTree = "<group>";
+		};
+		FD0725E923EACAE100CFC59A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD0725EA23EACAE100CFC59A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD05189423CB767800917861 /* SingelPhotoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0518BF23CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoApp" */;
+			buildPhases = (
+				FD05189123CB767800917861 /* Sources */,
+				FD05189223CB767800917861 /* Frameworks */,
+				FD05189323CB767800917861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingelPhotoApp;
+			productName = SingelPhotoApp;
+			productReference = FD05189523CB767800917861 /* SingelPhotoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD0518AA23CB767A00917861 /* SingelPhotoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0518C223CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoAppTests" */;
+			buildPhases = (
+				FD0518A723CB767A00917861 /* Sources */,
+				FD0518A823CB767A00917861 /* Frameworks */,
+				FD0518A923CB767A00917861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD0518AD23CB767A00917861 /* PBXTargetDependency */,
+			);
+			name = SingelPhotoAppTests;
+			productName = SingelPhotoAppTests;
+			productReference = FD0518AB23CB767A00917861 /* SingelPhotoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD0518B523CB767A00917861 /* SingelPhotoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD0518C523CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoAppUITests" */;
+			buildPhases = (
+				FD0518B223CB767A00917861 /* Sources */,
+				FD0518B323CB767A00917861 /* Frameworks */,
+				FD0518B423CB767A00917861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD0518B823CB767A00917861 /* PBXTargetDependency */,
+			);
+			name = SingelPhotoAppUITests;
+			productName = SingelPhotoAppUITests;
+			productReference = FD0518B623CB767A00917861 /* SingelPhotoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD05188D23CB767800917861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Hakim Laoukili";
+				TargetAttributes = {
+					FD05189423CB767800917861 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FD0518AA23CB767A00917861 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FD05189423CB767800917861;
+					};
+					FD0518B523CB767A00917861 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FD05189423CB767800917861;
+					};
+				};
+			};
+			buildConfigurationList = FD05189023CB767800917861 /* Build configuration list for PBXProject "SingelPhotoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD05188C23CB767800917861;
+			productRefGroup = FD05189623CB767800917861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD05189423CB767800917861 /* SingelPhotoApp */,
+				FD0518AA23CB767A00917861 /* SingelPhotoAppTests */,
+				FD0518B523CB767A00917861 /* SingelPhotoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD05189323CB767800917861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8E3EC023F5834C007DD457 /* ResultTableViewCell.xib in Resources */,
+				FD03C7B423F32EE80045F2E8 /* 03- Gopala.mp3 in Resources */,
+				FD0518A523CB767A00917861 /* LaunchScreen.storyboard in Resources */,
+				FD0518A223CB767A00917861 /* Assets.xcassets in Resources */,
+				FD0725FE23EB6F3200CFC59A /* Toto - Africa (Diezeo Remix).mp3 in Resources */,
+				FD0725E823EACA1C00CFC59A /* savannah-preview-full.mp3 in Resources */,
+				FD0518A023CB767800917861 /* Main.storyboard in Resources */,
+				FD0A0A8D2408672D00AC00E1 /* Alan Walker - Fade.mp3 in Resources */,
+				FD0725F823EAE2AF00CFC59A /* Default-568h@2x.png in Resources */,
+				FD0725FC23EAF48600CFC59A /* sunsets-preview-60s.mp3 in Resources */,
+				FD099DD223F43486006C138B /* Le Gang - Anita Latina.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518A923CB767A00917861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518B423CB767A00917861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD05189123CB767800917861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFF2FCB23D09D0600FA0AB7 /* Question.swift in Sources */,
+				FD0044A523D9D3F900A0FE20 /* ResultViewController.swift in Sources */,
+				FD08BD7E23D1F1560088BFA8 /* QuestionViewController.swift in Sources */,
+				FD099DD023F425F4006C138B /* CellPictureFile.swift in Sources */,
+				FD05189D23CB767800917861 /* ViewController.swift in Sources */,
+				FD05189923CB767800917861 /* AppDelegate.swift in Sources */,
+				FD283FBF23F5673F004A0084 /* ResultTableViewCell.swift in Sources */,
+				FD05189B23CB767800917861 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518A723CB767A00917861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0518B023CB767A00917861 /* SingelPhotoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0518B223CB767A00917861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0518BB23CB767A00917861 /* SingelPhotoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD0518AD23CB767A00917861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD05189423CB767800917861 /* SingelPhotoApp */;
+			targetProxy = FD0518AC23CB767A00917861 /* PBXContainerItemProxy */;
+		};
+		FD0518B823CB767A00917861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD05189423CB767800917861 /* SingelPhotoApp */;
+			targetProxy = FD0518B723CB767A00917861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD05189E23CB767800917861 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD05189F23CB767800917861 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD0518A323CB767A00917861 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD0518A423CB767A00917861 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD0518BD23CB767A00917861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD0518BE23CB767A00917861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD0518C023CB767A00917861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVQNB5FT9D;
+				INFOPLIST_FILE = "$(SRCROOT)/../../.Trash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD0518C123CB767A00917861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVQNB5FT9D;
+				INFOPLIST_FILE = "$(SRCROOT)/../../.Trash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD0518C323CB767A00917861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SingelPhotoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingelPhotoApp.app/SingelPhotoApp";
+			};
+			name = Debug;
+		};
+		FD0518C423CB767A00917861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SingelPhotoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingelPhotoApp.app/SingelPhotoApp";
+			};
+			name = Release;
+		};
+		FD0518C623CB767A00917861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SingelPhotoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingelPhotoApp;
+			};
+			name = Debug;
+		};
+		FD0518C723CB767A00917861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SingelPhotoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = STI.SingelPhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingelPhotoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD05189023CB767800917861 /* Build configuration list for PBXProject "SingelPhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0518BD23CB767A00917861 /* Debug */,
+				FD0518BE23CB767A00917861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0518BF23CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0518C023CB767A00917861 /* Debug */,
+				FD0518C123CB767A00917861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0518C223CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0518C323CB767A00917861 /* Debug */,
+				FD0518C423CB767A00917861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0518C523CB767A00917861 /* Build configuration list for PBXNativeTarget "SingelPhotoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0518C623CB767A00917861 /* Debug */,
+				FD0518C723CB767A00917861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD05188D23CB767800917861 /* Project object */;
+}

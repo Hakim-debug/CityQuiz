@@ -80,6 +80,8 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black
+        
         
         
         
@@ -96,12 +98,7 @@ class QuestionViewController: UIViewController {
         
         
         questions.shuffle()
-        
-        
-        
-        
-        
-        
+
         loadQuestion()
         
         nrOfQuestions = questions.count
@@ -154,6 +151,7 @@ class QuestionViewController: UIViewController {
         ScoreLabel.text = "Your Score " +  String(nrOfCorrectAnsweres ) + " Of " + String(questions.count)
         
         currentQuestionIndex += 1
+        self.view.backgroundColor = UIColor.black
      
     }
     
@@ -196,8 +194,7 @@ class QuestionViewController: UIViewController {
             
         } else {
             
-
-            loadQuestion()
+         loadQuestion()
         }
     }
     
@@ -254,7 +251,7 @@ class QuestionViewController: UIViewController {
             
             // When you are Correct you will get a green Screen
              nrOfCorrectAnsweres += 1
-//            print("inne i check")
+
             self.view.backgroundColor = UIColor.green
             
             lastQuestionAnswer = true
@@ -272,7 +269,7 @@ class QuestionViewController: UIViewController {
         
         
         
-        //       when Alert buttons shows the alanativ buttons faddes awaye
+        //  When Alert buttons shows the alanativ buttons faddes awaye
         Buttom1.alpha = 0
         Buttom2.alpha = 0
         Buttom3.alpha = 0
@@ -286,11 +283,10 @@ class QuestionViewController: UIViewController {
     @IBAction func Buttom1Action(_ sender: UIButton){
         
         if let text = sender.titleLabel?.text {
+            
             selectedAnswer = text
-//            print("Selected answer \(text)")
+
             CheckAnswer()
-            
-            
             
         }
         
@@ -306,7 +302,6 @@ class QuestionViewController: UIViewController {
         
         if let text = sender.titleLabel?.text {
             selectedAnswer = text
-//            print("Selected answer \(text)")
             CheckAnswer()
             
         }
@@ -322,7 +317,6 @@ class QuestionViewController: UIViewController {
         print("Question index: \(currentQuestionIndex)")
         if let text = sender.titleLabel?.text {
             selectedAnswer = text
-//            print("Selected answer \(text)")
             CheckAnswer()
             
         }
@@ -350,7 +344,7 @@ class QuestionViewController: UIViewController {
     }
     
     
-    
+//    DeSignButtons and images
     func designButtons(){
         ButtonPaus.layer.cornerRadius = 10
         ButtonPaus.layer.borderWidth = 2
@@ -364,7 +358,7 @@ class QuestionViewController: UIViewController {
         Buttom3.layer.borderWidth = 1
         europeImage.layer.cornerRadius = 8
         europeImage.layer.borderWidth = 2
-        //        europeImage.layer.borderColor = (UIColor.white as? CGColor)
+        europeImage.layer.borderColor = UIColor.purple.cgColor
         
         
         
