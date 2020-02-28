@@ -62,9 +62,9 @@ class ViewController: UIViewController {
         
         loadEuropeQuestions()
         
-        //       changeMusci(fileName: "Toto - Africa (Diezeo Remix)")
+               changeMusci(fileName: "Alan Walker - Fade")
                 
-        //        audioPlayer.play()
+               audioPlayer.play()
         
         performSegue(withIdentifier: segueToQuestions , sender: self)
         
@@ -321,6 +321,10 @@ class ViewController: UIViewController {
         Afrika.layer.borderWidth = 1
         Asia.layer.borderWidth = 1
         SouthAmerica.layer.borderWidth = 1
+        euoropa.layer.borderColor = UIColor.white.cgColor
+        Afrika.layer.borderColor = UIColor.white.cgColor
+        Asia.layer.borderColor = UIColor.white.cgColor
+        SouthAmerica.layer.borderColor = UIColor.white.cgColor
     
     }
 
